@@ -1,4 +1,8 @@
-const variable = 5; 
-const b = [1, 2, 3, 5];
+const variable = 5
+// const e = 'asdkasd'
+const b = [1, 2, 3, 5]
+// const f = true
+// const asd = 'false'
 
-return 'hola';
+console.log(variable)
+console.log(b)
