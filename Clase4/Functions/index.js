@@ -12,7 +12,7 @@ function print (name, lastName) {
 
 // console.log(printGive())
 
-function print2 ({ name, lastname }) {
+function print2({ name, lastname }) {
   console.log(name, lastname)
 }
 // print2({ name: 'lopez', lastname: 'Ricardo' })
