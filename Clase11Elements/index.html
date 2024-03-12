@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        .cajaMayor{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        #h1First {
+            text-align: center;
+            color: white;
+        }
+        .cja {
+            border: 1px solid black;
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 1em;
+        }
+        .carita{
+            color: white;
+        }
+      
+        :hover.cja{
+            border: 1px solid black;
+            height: 60px;
+            width: 110px;
+            color: white;
+            background-color: black;
+            border-radius: 2em;
+            transition: 2s ease-in-out;
+            cursor: pointer;
+
+            }
+            #h1First2 + p + p +p{
+                color: palevioletred;
+            }
+    </style>
+</head>
+<body>
+    <h1 id="h1First" class="h1First2" atributoElemento="LOL">Elements</h1>
+    <h2 id="h1First2" class="h1First2" atributoElemento="LAL">subElements</h2>
+    <!-- <h1 class="h1First2">Elemto 2</h1> -->
+    <p>Texto Demo</p>
+    <p>Texto Demo2</p>
+    <p>Texto Demo3</p>
+    <p>Texto Demo4</p>
+    <div class="cajaMayor">
+        <div class="cja"><span>Hola</span></div>
+        <div class="cja"><span>como</span></div>
+        <div class="cja"><span>estas</span></div>
+        <div class="cja"><span class="carita">💀</span></div>
+    </div>
+</body>
+</html>
