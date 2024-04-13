@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('tagName', tituloQueriID)
   console.log('tagName', ptitulo)
   console.log('tagName', ptitulo2)
-  console.log('tagName', ptitulo3[1])
+  console.log('tagName', ptitulo3)
   //   console.log('tagName', tituloQueriElemtAll)
 })

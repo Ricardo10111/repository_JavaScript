@@ -1,0 +1,40 @@
+html ,body {
+    box-sizing: content-box;
+        color: white;
+        background: grey;
+    }
+
+
+    .formContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 2em;
+    }
+    .formContainer2 {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        border: 1px solid white;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(12px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 2em;
+        padding: 20px 100px 30px;
+    }
+    textarea{
+        border: 1px solid blue;
+        height: 150px;
+        max-width: 500px;
+        width: 100%;
+    }

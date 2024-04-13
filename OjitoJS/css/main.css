@@ -1,0 +1,17 @@
+html{
+    box-sizing: content-box;
+}
+body{
+    background: black;
+    color: white;
+}
+#show-password{
+    cursor: pointer;
+    user-select: none;
+    background: greenyellow;
+    color: black;
+    padding: 10px 20px;
+}
+#show-password:hover{
+    color: red;
+}

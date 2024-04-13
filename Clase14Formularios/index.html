@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Formularios</title>
+    <script type="module" src="./index.js"></script>
+
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <!-- si vamos a hacer envio de cualquier cosa que no sea texto mandalo con form data es el encriptado-->
+    <!-- el action  es para enviar los datos al lugar donde van a llegar los datos, si no le pones nada se envia en el mismo lugar donde esta la ruta -->
+    <!-- method es para saber como mandar la info por HTML es GET para que te de la info o POST para que la info se mande y se guarde, otros metodos que salieron despues para JS son PUT vamos a actualizar la informacion PATCH vamos a actualizar una parte de la info DELETE vamos a borrar la informacion-->
+    <div class="formContainer">
+        <form class="formContainer2" action="" method="GET" enctype="multipart/form-data">
+            <input type="name" placeholder="Name">
+            <input type="phone" placeholder="52-(55)" autocomplete="on">
+            <input name="phone" type="tel" placeholder="52-(55)">
+            <input name="correo" type="email" placeholder="email">
+            <input name="contraseña" type="password" placeholder="password">
+            Los checkbox
+            <div class="checkboxContainer">
+                <label for="pelotaID">pelota</label>
+                <input id="pelotaID" name="cosas" value="pelota" type="checkbox">
+                <label for="galletaId">Galleta</label>
+                <input name="cosas" value="pelota" type="checkbox">
+                <label for="">Papas</label>
+                <input name="cosas" value="pelota" type="checkbox">
+                <label for="">Rata</label>
+                <input name="cosas" value="pelota" type="checkbox">
+            </div>
+            <div>
+
+                <label for="">pelota</label>
+                <input name="cosas" value="pelota" type="radio">
+                <label for="">pelota</label>
+                <input name="cosas" value="pelota" type="radio">
+                <label for="">pelota</label>
+                <input name="cosas" value="pelota" type="radio">
+
+
+            </div>
+
+            <div>
+                <!-- como poner un tipo file y como configurarlo -->
+                <label for="bnt_enviar">aqui esta el file</label>
+                <input name="imagen" type="file" id="bnt_enviar" accept="image/jpg">
+
+            </div>
+            <div>
+                <label for="colorsId">aqui esta el color</label>
+                <input type="color" name="" id="colorsId">
+            </div>
+            <div>
+                <label for="dateId">aqui esta el date</label>
+                <input type="date" name="" id="dateId">
+            </div>
+            <div>
+                <label for="dateTimeId">aqui esta el dateTime</label>
+                <input type="datetime" name="" id="dateTimeId">
+            </div>
+            <div>
+                <label for="dateTimelocalId">aqui esta el dateTimeLocal</label>
+                <input type="datetime-local" name="" id="dateTimelocalId">
+            </div>
+            <div>
+                <label for="hiddenId">aqui esta el hidden o sea no se ve</label>
+                <input type="hidden" name="" id="hiddenId">
+            </div>
+            <div>
+                <label for="imageId">aqui esta el imagen</label>
+                <input type="image" name="" id="imageId"
+                    src="https://imgs.search.brave.com/qLLHz0l2FYTQ-WrBnQBJ3VLwVvoLxhz0eR1cwkz5o6k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzUxL0ZhY2Vib29r/X2ZfbG9nb18oMjAx/OSkuc3Zn.svg"
+                    width="30px" height="30px">
+            </div>
+
+            <!-- si en el textarea no se le pone nombre o esta disabled no se va a enviar -->
+            <textarea name="comments" id="" placeholder="Déjanos saber tu opinión en esta caja "
+                readonly>Hola! mi mensaje es...</textarea>
+            <textarea name="comments" id="" placeholder="Déjanos saber tu opinión en esta caja "
+                disabled>Hola! mi mensaje es...</textarea>
+            <label for="">Comentarios</label>
+            <textarea name="comments" id="" placeholder="Déjanos saber tu opinión en esta caja " required></textarea>
+            
+            <select name="frutas" autocomplete="">
+                <!-- el value es el que se va a enviar -->
+                <option value="" selected>Selecciona una Fruta</option>
+                <option value="23">Manzana</option>
+                <option value="12">Pera</option>
+                <option value="65">Uva</option>
+                <option value="764" disabled>Piña</option>
+                <option value="232">Naranja</option>
+            </select>
+            <button type="submit">enviar</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
